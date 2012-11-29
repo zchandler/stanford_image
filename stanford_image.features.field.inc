@@ -529,6 +529,262 @@ function stanford_image_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-stanford_slide-field_s_image_info'.
+  $fields['node-stanford_slide-field_s_image_info'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_s_image_info',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'field_collection',
+      'settings' => array(
+        'path' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'field_collection',
+    ),
+    'field_instance' => array(
+      'bundle' => 'stanford_slide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'field_collection',
+          'settings' => array(
+            'add' => '',
+            'delete' => '',
+            'description' => 0,
+            'edit' => '',
+            'view_mode' => 'full',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => '0',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_s_image_info',
+      'label' => 'Image',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'field_collection',
+        'settings' => array(),
+        'type' => 'field_collection_embed',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-stanford_slide-field_s_slide_type'.
+  $fields['node-stanford_slide-field_s_slide_type'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_s_slide_type',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'home_banner' => 'Home page banner',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'stanford_slide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'When multiple images are used for, say a slide show, the type identifies where the image is used.',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_s_slide_type',
+      'label' => 'Type',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '3',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-stanford_slide-field_s_slide_weight'.
+  $fields['node-stanford_slide-field_s_slide_weight'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_s_slide_weight',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'number_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'stanford_slide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'If this image is part of a group, the weight helps determine the sorting order.  ',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_s_slide_weight',
+      'label' => 'Weight',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-stanford_slide-field_s_sllide_link'.
+  $fields['node-stanford_slide-field_s_sllide_link'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_s_sllide_link',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'stanford_slide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '1',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_s_sllide_link',
+      'label' => 'Link',
+      'required' => FALSE,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_field',
+        'weight' => '2',
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
@@ -536,12 +792,17 @@ function stanford_image_field_default_fields() {
   t('Credits');
   t('Enter the original name, if changed, and other information to aid in finding the original image.');
   t('Enter the photographer or organization credits.');
+  t('If this image is part of a group, the weight helps determine the sorting order.  ');
   t('Image');
   t('Is this a placeholder');
   t('Is this image a placeholder, to be replaced when poplating the site with final content?');
+  t('Link');
   t('Optionally enter information to appear as a caption for this image.');
   t('Read More Link');
   t('Source Info');
+  t('Type');
+  t('Weight');
+  t('When multiple images are used for, say a slide show, the type identifies where the image is used.');
 
   return $fields;
 }
