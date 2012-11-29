@@ -23,6 +23,14 @@ function stanford_image_ctools_plugin_api() {
  */
 function stanford_image_node_info() {
   $items = array(
+    'stanford_page' => array(
+      'name' => t('Stanford Page'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'stanford_slide' => array(
       'name' => t('Stanford Slide'),
       'base' => 'node_content',
