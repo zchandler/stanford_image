@@ -13,6 +13,118 @@ function stanford_image_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_stanford_image';
+  $strongarm->value = 'edit-menu';
+  $export['additional_settings__active_tab_stanford_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_stanford_slide';
+  $strongarm->value = 'edit-comment';
+  $export['additional_settings__active_tab_stanford_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_stanford_page';
+  $strongarm->value = 0;
+  $export['comment_anonymous_stanford_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_stanford_slide';
+  $strongarm->value = 0;
+  $export['comment_anonymous_stanford_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_stanford_page';
+  $strongarm->value = 1;
+  $export['comment_default_mode_stanford_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_stanford_slide';
+  $strongarm->value = 1;
+  $export['comment_default_mode_stanford_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_stanford_page';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_stanford_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_stanford_slide';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_stanford_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_stanford_page';
+  $strongarm->value = 1;
+  $export['comment_form_location_stanford_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_stanford_slide';
+  $strongarm->value = 1;
+  $export['comment_form_location_stanford_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_stanford_page';
+  $strongarm->value = '1';
+  $export['comment_preview_stanford_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_stanford_slide';
+  $strongarm->value = '1';
+  $export['comment_preview_stanford_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_stanford_page';
+  $strongarm->value = '1';
+  $export['comment_stanford_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_stanford_slide';
+  $strongarm->value = '1';
+  $export['comment_stanford_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_stanford_page';
+  $strongarm->value = 1;
+  $export['comment_subject_field_stanford_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_stanford_slide';
+  $strongarm->value = 1;
+  $export['comment_subject_field_stanford_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__stanford_page';
   $strongarm->value = array(
     'view_modes' => array(
@@ -121,15 +233,6 @@ function stanford_image_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_stanford_image';
-  $strongarm->value = array(
-    0 => 'status',
-  );
-  $export['node_options_stanford_image'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_stanford_page';
   $strongarm->value = array(
     0 => 'status',
@@ -162,13 +265,6 @@ function stanford_image_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_stanford_image';
-  $strongarm->value = 0;
-  $export['node_submitted_stanford_image'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_stanford_page';
   $strongarm->value = 0;
   $export['node_submitted_stanford_page'] = $strongarm;
@@ -183,9 +279,9 @@ function stanford_image_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'save_continue_stanford_image';
+  $strongarm->name = 'save_continue_stanford_page';
   $strongarm->value = 'Save and add fields';
-  $export['save_continue_stanford_image'] = $strongarm;
+  $export['save_continue_stanford_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
