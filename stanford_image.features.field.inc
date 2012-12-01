@@ -35,7 +35,7 @@ function stanford_image_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'field_collection',
           'settings' => array(
             'add' => 'Add',
@@ -45,7 +45,7 @@ function stanford_image_field_default_fields() {
             'view_mode' => 'full',
           ),
           'type' => 'field_collection_view',
-          'weight' => 0,
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'bean',
@@ -60,7 +60,7 @@ function stanford_image_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '-3',
+        'weight' => '1',
       ),
     ),
   );
@@ -99,11 +99,11 @@ function stanford_image_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 2,
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'bean',
@@ -123,7 +123,109 @@ function stanford_image_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '-1',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'bean-stanford_postcard-field_s_postcard_file'.
+  $fields['bean-stanford_postcard-field_s_postcard_file'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_s_postcard_file',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'file',
+      'settings' => array(
+        'display_default' => 1,
+        'display_field' => 1,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'file',
+    ),
+    'field_instance' => array(
+      'bundle' => 'stanford_postcard',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'file',
+          'settings' => array(),
+          'type' => 'file_default',
+          'weight' => '3',
+        ),
+      ),
+      'entity_type' => 'bean',
+      'field_name' => 'field_s_postcard_file',
+      'label' => 'File',
+      'required' => 0,
+      'settings' => array(
+        'description_field' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'txt pdf doc docx xls xlsx rtf',
+        'max_filesize' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'file',
+        'settings' => array(
+          'insert' => 1,
+          'insert_class' => '',
+          'insert_default' => 'auto',
+          'insert_styles' => array(
+            'auto' => 'auto',
+            'image' => 0,
+            'image_12-col-banner' => 0,
+            'image_3-col-header' => 0,
+            'image_3-col-well-header' => 0,
+            'image_3-col-well-profile' => 0,
+            'image_4-col-header' => 0,
+            'image_6-col-banner' => 0,
+            'image_6-col-header' => 0,
+            'image_6-col-header-short' => 0,
+            'image_8-col-banner' => 0,
+            'image_9-col-banner' => 0,
+            'image_icon' => 0,
+            'image_large' => 0,
+            'image_large-landscape' => 0,
+            'image_large-profile' => 0,
+            'image_large-square' => 0,
+            'image_med-landscape' => 0,
+            'image_med-profile' => 0,
+            'image_med-square' => 0,
+            'image_medium' => 0,
+            'image_sm-landscape' => 0,
+            'image_sm-square' => 0,
+            'image_stanford_30x30' => 0,
+            'image_thmb-landscape' => 0,
+            'image_thmb-profile' => 0,
+            'image_thmb-square' => 0,
+            'image_thumbnail' => 0,
+            'link' => 0,
+          ),
+          'insert_width' => '',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'file_generic',
+        'weight' => '3',
       ),
     ),
   );
@@ -165,11 +267,11 @@ function stanford_image_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => 1,
+          'weight' => '4',
         ),
       ),
       'entity_type' => 'bean',
@@ -200,7 +302,7 @@ function stanford_image_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '-2',
+        'weight' => '4',
       ),
     ),
   );
@@ -598,7 +700,7 @@ function stanford_image_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '31',
+        'weight' => '2',
       ),
     ),
   );
@@ -659,7 +761,115 @@ function stanford_image_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '33',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-stanford_page-field_s_page_file'.
+  $fields['node-stanford_page-field_s_page_file'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_s_page_file',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'file',
+      'settings' => array(
+        'display_default' => 1,
+        'display_field' => 1,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'file',
+    ),
+    'field_instance' => array(
+      'bundle' => 'stanford_page',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'file',
+          'settings' => array(),
+          'type' => 'file_default',
+          'weight' => '3',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_s_page_file',
+      'label' => 'File',
+      'required' => 0,
+      'settings' => array(
+        'description_field' => 1,
+        'file_directory' => '',
+        'file_extensions' => 'txt pdf doc docx ppt pptx xls xlsx xml odt zip',
+        'max_filesize' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'file',
+        'settings' => array(
+          'insert' => 1,
+          'insert_class' => '',
+          'insert_default' => 'auto',
+          'insert_styles' => array(
+            'auto' => 'auto',
+            'image' => 0,
+            'image_12-col-banner' => 0,
+            'image_3-col-header' => 0,
+            'image_3-col-well-header' => 0,
+            'image_3-col-well-profile' => 0,
+            'image_4-col-header' => 0,
+            'image_6-col-banner' => 0,
+            'image_6-col-header' => 0,
+            'image_6-col-header-short' => 0,
+            'image_8-col-banner' => 0,
+            'image_9-col-banner' => 0,
+            'image_icon' => 0,
+            'image_large' => 0,
+            'image_large-landscape' => 0,
+            'image_large-profile' => 0,
+            'image_large-square' => 0,
+            'image_med-landscape' => 0,
+            'image_med-profile' => 0,
+            'image_med-square' => 0,
+            'image_medium' => 0,
+            'image_sm-landscape' => 0,
+            'image_sm-square' => 0,
+            'image_stanford_30x30' => 0,
+            'image_thmb-landscape' => 0,
+            'image_thmb-profile' => 0,
+            'image_thmb-square' => 0,
+            'image_thumbnail' => 0,
+            'link' => 0,
+          ),
+          'insert_width' => '',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'file_generic',
+        'weight' => '4',
       ),
     ),
   );
@@ -747,7 +957,7 @@ function stanford_image_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '34',
+        'weight' => '3',
       ),
     ),
   );
@@ -1015,6 +1225,7 @@ function stanford_image_field_default_fields() {
   t('Credits');
   t('Enter the original name, if changed, and other information to aid in finding the original image.');
   t('Enter the photographer or organization credits.');
+  t('File');
   t('If this image is part of a group, the weight helps determine the sorting order.  ');
   t('Image');
   t('Image insert');

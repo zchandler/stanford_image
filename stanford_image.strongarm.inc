@@ -38,10 +38,10 @@ function stanford_image_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '5',
         ),
       ),
       'display' => array(),
@@ -121,6 +121,15 @@ function stanford_image_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_stanford_image';
+  $strongarm->value = array(
+    0 => 'status',
+  );
+  $export['node_options_stanford_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_stanford_page';
   $strongarm->value = array(
     0 => 'status',
@@ -153,6 +162,13 @@ function stanford_image_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_stanford_image';
+  $strongarm->value = 0;
+  $export['node_submitted_stanford_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_stanford_page';
   $strongarm->value = 0;
   $export['node_submitted_stanford_page'] = $strongarm;
@@ -163,6 +179,20 @@ function stanford_image_strongarm() {
   $strongarm->name = 'node_submitted_stanford_slide';
   $strongarm->value = 0;
   $export['node_submitted_stanford_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_continue_stanford_image';
+  $strongarm->value = 'Save and add fields';
+  $export['save_continue_stanford_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_continue_stanford_slide';
+  $strongarm->value = 'Save and add fields';
+  $export['save_continue_stanford_slide'] = $strongarm;
 
   return $export;
 }
