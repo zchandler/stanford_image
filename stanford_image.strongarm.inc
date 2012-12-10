@@ -91,7 +91,7 @@ function stanford_image_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_stanford_slide';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['comment_preview_stanford_slide'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -146,6 +146,21 @@ function stanford_image_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'stanford_6_col_banner' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_8_col_banner' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_9_col_banner' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_12_col_banner' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -185,6 +200,24 @@ function stanford_image_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_6_col_banner' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_8_col_banner' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_9_col_banner' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_12_col_banner' => array(
+        'custom_settings' => TRUE,
+      ),
+      'med_profile_postcard_left_wrap' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -193,6 +226,9 @@ function stanford_image_strongarm() {
         ),
         'path' => array(
           'weight' => '5',
+        ),
+        'redirect' => array(
+          'weight' => '6',
         ),
       ),
       'display' => array(),
