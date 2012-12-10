@@ -38,6 +38,32 @@ function stanford_image_field_default_fields() {
           'label' => 'hidden',
           'module' => 'field_collection',
           'settings' => array(
+            'add' => '',
+            'delete' => '',
+            'description' => 0,
+            'edit' => '',
+            'view_mode' => 'stanford_med_profile',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => '7',
+        ),
+        'stanford_med_profile' => array(
+          'label' => 'hidden',
+          'module' => 'field_collection',
+          'settings' => array(
+            'add' => '',
+            'delete' => '',
+            'description' => 0,
+            'edit' => '',
+            'view_mode' => 'stanford_med_profile',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => '2',
+        ),
+        'test' => array(
+          'label' => 'hidden',
+          'module' => 'field_collection',
+          'settings' => array(
             'add' => 'Add',
             'delete' => 'Delete',
             'description' => TRUE,
@@ -99,6 +125,20 @@ function stanford_image_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '3',
+        ),
+        'stanford_med_profile' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '4',
+        ),
+        'test' => array(
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
@@ -165,6 +205,20 @@ function stanford_image_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
+          'label' => 'hidden',
+          'module' => 'file',
+          'settings' => array(),
+          'type' => 'file_default',
+          'weight' => '4',
+        ),
+        'stanford_med_profile' => array(
+          'label' => 'hidden',
+          'module' => 'file',
+          'settings' => array(),
+          'type' => 'file_default',
+          'weight' => '5',
+        ),
+        'test' => array(
           'label' => 'hidden',
           'module' => 'file',
           'settings' => array(),
@@ -271,6 +325,20 @@ function stanford_image_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
+          'weight' => '5',
+        ),
+        'stanford_med_profile' => array(
+          'label' => 'hidden',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '6',
+        ),
+        'test' => array(
+          'label' => 'hidden',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
           'weight' => '4',
         ),
       ),
@@ -344,7 +412,47 @@ function stanford_image_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '1',
+          'weight' => '2',
+        ),
+        'stanford_12_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '2',
+        ),
+        'stanford_6_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '3',
+        ),
+        'stanford_8_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '2',
+        ),
+        'stanford_9_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '2',
+        ),
+        'stanford_med_profile' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+        'test' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -362,7 +470,7 @@ function stanford_image_field_default_fields() {
           'rows' => '2',
         ),
         'type' => 'text_textarea',
-        'weight' => '4',
+        'weight' => '35',
       ),
     ),
   );
@@ -404,7 +512,43 @@ function stanford_image_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '3',
+          'weight' => '4',
+        ),
+        'stanford_12_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
+        'stanford_6_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
+        ),
+        'stanford_8_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
+        ),
+        'stanford_9_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
+        'stanford_med_profile' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
+        'test' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -422,7 +566,7 @@ function stanford_image_field_default_fields() {
           'rows' => '2',
         ),
         'type' => 'text_textarea',
-        'weight' => '2',
+        'weight' => '33',
       ),
     ),
   );
@@ -467,10 +611,70 @@ function stanford_image_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'medium',
+            'image_style' => 'med-profile',
           ),
           'type' => 'image',
-          'weight' => '0',
+          'weight' => '6',
+        ),
+        'stanford_12_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => '6',
+        ),
+        'stanford_6_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '6-col-banner',
+          ),
+          'type' => 'image',
+          'weight' => '1',
+        ),
+        'stanford_8_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '8-col-banner',
+          ),
+          'type' => 'image',
+          'weight' => '1',
+        ),
+        'stanford_9_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '9-col-banner',
+          ),
+          'type' => 'image',
+          'weight' => '6',
+        ),
+        'stanford_med_profile' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => 'med-profile',
+          ),
+          'type' => 'image',
+          'weight' => '6',
+        ),
+        'test' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => 'med-profile',
+          ),
+          'type' => 'image',
+          'weight' => '6',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -508,7 +712,7 @@ function stanford_image_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '1',
+        'weight' => '32',
       ),
     ),
   );
@@ -541,7 +745,11 @@ function stanford_image_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'field_s_image_info',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => '1',
+        ),
+      ),
       'deleted' => '0',
       'description' => 'Is this image a placeholder, to be replaced when poplating the site with final content?',
       'display' => array(
@@ -549,7 +757,43 @@ function stanford_image_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '4',
+          'weight' => '5',
+        ),
+        'stanford_12_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
+        ),
+        'stanford_6_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '6',
+        ),
+        'stanford_8_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '6',
+        ),
+        'stanford_9_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
+        ),
+        'stanford_med_profile' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
+        ),
+        'test' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -564,7 +808,7 @@ function stanford_image_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '5',
+        'weight' => '36',
       ),
     ),
   );
@@ -608,7 +852,43 @@ function stanford_image_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '2',
+          'weight' => '3',
+        ),
+        'stanford_12_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+        'stanford_6_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
+        'stanford_8_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
+        'stanford_9_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+        'stanford_med_profile' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+        'test' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -626,7 +906,7 @@ function stanford_image_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '3',
+        'weight' => '34',
       ),
     ),
   );
@@ -671,7 +951,7 @@ function stanford_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -735,12 +1015,12 @@ function stanford_image_field_default_fields() {
           'settings' => array(
             'add' => '',
             'delete' => '',
-            'description' => 1,
+            'description' => 0,
             'edit' => '',
-            'view_mode' => 'full',
+            'view_mode' => 'stanford_9_col_banner',
           ),
           'type' => 'field_collection_view',
-          'weight' => '0',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -823,7 +1103,7 @@ function stanford_image_field_default_fields() {
       'settings' => array(
         'description_field' => 1,
         'file_directory' => '',
-        'file_extensions' => 'txt pdf doc docx ppt pptx xls xlsx xml odt zip',
+        'file_extensions' => 'txt pdf doc docx ppt pptx xls xlsx xml odt zip rtf',
         'max_filesize' => '',
         'user_register_form' => FALSE,
       ),
@@ -858,7 +1138,6 @@ function stanford_image_field_default_fields() {
             'image_medium' => 0,
             'image_sm-landscape' => 0,
             'image_sm-square' => 0,
-            'image_stanford_30x30' => 0,
             'image_thmb-landscape' => 0,
             'image_thmb-profile' => 0,
             'image_thmb-square' => 0,
@@ -913,7 +1192,7 @@ function stanford_image_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '2',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -994,16 +1273,71 @@ function stanford_image_field_default_fields() {
             'delete' => '',
             'description' => 0,
             'edit' => '',
-            'view_mode' => 'full',
+            'view_mode' => 'stanford_9_col_banner',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => '0',
+        ),
+        'stanford_12_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'field_collection',
+          'settings' => array(
+            'add' => '',
+            'delete' => '',
+            'description' => 0,
+            'edit' => '',
+            'view_mode' => 'stanford_12_col_banner',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => '0',
+        ),
+        'stanford_6_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'field_collection',
+          'settings' => array(
+            'view_mode' => 'stanford_6_col_banner',
+          ),
+          'type' => 'field_collection_fields',
+          'weight' => '0',
+        ),
+        'stanford_8_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'field_collection',
+          'settings' => array(
+            'add' => '',
+            'delete' => '',
+            'description' => 0,
+            'edit' => '',
+            'view_mode' => 'stanford_8_col_banner',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => '0',
+        ),
+        'stanford_9_col_banner' => array(
+          'label' => 'hidden',
+          'module' => 'field_collection',
+          'settings' => array(
+            'add' => '',
+            'delete' => '',
+            'description' => 0,
+            'edit' => '',
+            'view_mode' => 'stanford_9_col_banner',
           ),
           'type' => 'field_collection_view',
           'weight' => '0',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'field_collection',
+          'settings' => array(
+            'add' => '',
+            'delete' => '',
+            'description' => 0,
+            'edit' => '',
+            'view_mode' => 'stanford_thumbnail',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -1022,14 +1356,110 @@ function stanford_image_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-stanford_slide-field_s_slide_type'.
-  $fields['node-stanford_slide-field_s_slide_type'] = array(
+  // Exported field: 'node-stanford_slide-field_s_slide_category'.
+  $fields['node-stanford_slide-field_s_slide_category'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_s_slide_type',
+      'field_name' => 'field_s_slide_category',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'stanford_slide_category',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'stanford_slide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '1',
+        ),
+        'stanford_12_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '1',
+        ),
+        'stanford_6_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '1',
+        ),
+        'stanford_8_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '1',
+        ),
+        'stanford_9_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '1',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_s_slide_category',
+      'label' => 'Category',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'taxonomy',
+        'settings' => array(
+          'autocomplete_path' => 'taxonomy/autocomplete',
+          'size' => 60,
+        ),
+        'type' => 'taxonomy_autocomplete',
+        'weight' => '7',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-stanford_slide-field_s_slide_group'.
+  $fields['node-stanford_slide-field_s_slide_group'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_s_slide_group',
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1040,7 +1470,7 @@ function stanford_image_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'home_banner' => 'Home page banner',
+          'home' => 'Home page slideshow',
         ),
         'allowed_values_function' => '',
       ),
@@ -1051,24 +1481,48 @@ function stanford_image_field_default_fields() {
       'bundle' => 'stanford_slide',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'When multiple images are used for, say a slide show, the type identifies where the image is used.',
+      'description' => 'Identifies the group in which this slide belongs.',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '2',
+          'weight' => '3',
+        ),
+        'stanford_12_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+        'stanford_6_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+        'stanford_8_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+        'stanford_9_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_s_slide_type',
-      'label' => 'Type',
+      'field_name' => 'field_s_slide_group',
+      'label' => 'Group',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -1078,6 +1532,112 @@ function stanford_image_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-stanford_slide-field_s_slide_link'.
+  $fields['node-stanford_slide-field_s_slide_link'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_s_slide_link',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'stanford_slide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+        'stanford_12_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+        'stanford_6_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+        'stanford_8_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+        'stanford_9_col_banner' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_s_slide_link',
+      'label' => 'Link',
+      'required' => 0,
+      'settings' => array(
+        'attributes' => array(
+          'class' => 'more-link',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'default',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => '128',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_field',
         'weight' => '3',
       ),
     ),
@@ -1109,13 +1669,37 @@ function stanford_image_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '3',
+          'weight' => '4',
+        ),
+        'stanford_12_col_banner' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
+        'stanford_6_col_banner' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
+        'stanford_8_col_banner' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
+        'stanford_9_col_banner' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'node',
@@ -1139,93 +1723,17 @@ function stanford_image_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-stanford_slide-field_s_sllide_link'.
-  $fields['node-stanford_slide-field_s_sllide_link'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_s_sllide_link',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'link',
-      'settings' => array(
-        'attributes' => array(
-          'class' => '',
-          'rel' => '',
-          'target' => 'default',
-        ),
-        'display' => array(
-          'url_cutoff' => 80,
-        ),
-        'enable_tokens' => 1,
-        'title' => 'optional',
-        'title_maxlength' => 128,
-        'title_value' => '',
-        'url' => 0,
-      ),
-      'translatable' => '0',
-      'type' => 'link_field',
-    ),
-    'field_instance' => array(
-      'bundle' => 'stanford_slide',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '1',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_s_sllide_link',
-      'label' => 'Link',
-      'required' => FALSE,
-      'settings' => array(
-        'attributes' => array(
-          'class' => '',
-          'rel' => '',
-          'target' => 'default',
-        ),
-        'display' => array(
-          'url_cutoff' => 80,
-        ),
-        'enable_tokens' => 1,
-        'title' => 'optional',
-        'title_maxlength' => 128,
-        'title_value' => '',
-        'url' => 0,
-        'user_register_form' => FALSE,
-        'validate_url' => 1,
-      ),
-      'widget' => array(
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_field',
-        'weight' => '2',
-      ),
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Caption');
+  t('Category');
   t('Credits');
   t('Enter the original name, if changed, and other information to aid in finding the original image.');
   t('Enter the photographer or organization credits.');
   t('File');
+  t('Group');
+  t('Identifies the group in which this slide belongs.');
   t('If this image is part of a group, the weight helps determine the sorting order.  ');
   t('Image');
   t('Image insert');
@@ -1236,10 +1744,8 @@ function stanford_image_field_default_fields() {
   t('Read More Link');
   t('Select a header image for this page.');
   t('Source Info');
-  t('Type');
   t('Use this to Insert images into the text.');
   t('Weight');
-  t('When multiple images are used for, say a slide show, the type identifies where the image is used.');
 
   return $fields;
 }
