@@ -9,10 +9,10 @@
  */
 function stanford_image_taxonomy_default_vocabularies() {
   return array(
-    'stanford_slide_category' => array(
-      'name' => 'Slide Category',
-      'machine_name' => 'stanford_slide_category',
-      'description' => '',
+    'stanford_layouts' => array(
+      'name' => 'Stanford Layouts',
+      'machine_name' => 'stanford_layouts',
+      'description' => 'Layouts available for styling entities.',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',

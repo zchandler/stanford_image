@@ -9,24 +9,9 @@
  */
 function stanford_image_ctools_plugin_api() {
   list($module, $api) = func_get_args();
-  if ($module == "bean_admin_ui" && $api == "bean") {
-    return array("version" => "5");
-  }
-  list($module, $api) = func_get_args();
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
-  if ($module == "strongarm" && $api == "strongarm") {
-    return array("version" => "1");
-  }
-}
-
-/**
- * Implements hook_views_api().
- */
-function stanford_image_views_api() {
-  return array("version" => "3.0");
 }
 
 /**
@@ -34,19 +19,18 @@ function stanford_image_views_api() {
  */
 function stanford_image_node_info() {
   $items = array(
-    'stanford_page' => array(
-      'name' => t('Stanford Page'),
+    'stanford_image' => array(
+      'name' => t('Stanford Image'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Contains an optional image, with an optional link for associated content, optional text, and image credits.  Designed to be used in multiple circumstances especially to display an images with text.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
     ),
-    'stanford_slide' => array(
-      'name' => t('Stanford Slide'),
+    'stanfordf_fc_factory' => array(
+      'name' => t('Field Collection Factory'),
       'base' => 'node_content',
-      'description' => t('Used when the image is not associated with content.  For slideshows, rotating images, etc.
-Basically just the image field collection (no body text) with a link, type, and weight.'),
+      'description' => '',
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
