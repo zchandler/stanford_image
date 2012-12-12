@@ -486,47 +486,15 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '100';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'item_id' => 'item_id',
+    'counter' => 'counter',
+    'field_s_image_image' => 'field_s_image_image',
     'field_s_image_caption' => 'field_s_image_caption',
     'field_s_image_credits' => 'field_s_image_credits',
     'url' => 'url',
     'nothing' => 'nothing',
-    'counter' => 'counter',
-    'field_s_image_image' => 'field_s_image_image',
   );
   $handler->display->display_options['style_options']['default'] = 'field_s_image_credits';
   $handler->display->display_options['style_options']['info'] = array(
-    'item_id' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_s_image_caption' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_s_image_credits' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'url' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'nothing' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
     'counter' => array(
       'align' => '',
       'separator' => '',
@@ -538,6 +506,30 @@ function stanford_image_views_default_views() {
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
+    ),
+    'field_s_image_caption' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'field_s_image_credits' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'url' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'nothing' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
     ),
   );
   $handler->display->display_options['style_options']['override'] = 1;
@@ -607,15 +599,16 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['replace_spaces'] = 0;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim_whitespace'] = 0;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_s_image_caption']['alter']['max_length'] = '200';
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['more_link'] = 0;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_s_image_caption']['alter']['trim'] = 1;
   $handler->display->display_options['fields']['field_s_image_caption']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_s_image_caption']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['field_s_image_caption']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_s_image_caption']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_s_image_caption']['hide_empty'] = 1;
   $handler->display->display_options['fields']['field_s_image_caption']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_s_image_caption']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_s_image_caption']['field_api_classes'] = 0;
@@ -630,6 +623,7 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_credits']['alter']['replace_spaces'] = 0;
   $handler->display->display_options['fields']['field_s_image_credits']['alter']['trim_whitespace'] = 0;
   $handler->display->display_options['fields']['field_s_image_credits']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_s_image_credits']['alter']['max_length'] = '200';
   $handler->display->display_options['fields']['field_s_image_credits']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_s_image_credits']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_s_image_credits']['alter']['more_link'] = 0;
@@ -638,7 +632,7 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_credits']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_s_image_credits']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['field_s_image_credits']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_s_image_credits']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_s_image_credits']['hide_empty'] = 1;
   $handler->display->display_options['fields']['field_s_image_credits']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_s_image_credits']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_s_image_credits']['field_api_classes'] = 0;
@@ -746,6 +740,7 @@ function stanford_image_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Slideshow Images';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -754,66 +749,68 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_s_image_caption' => 'field_s_image_caption',
-    'field_s_slide_link' => 'field_s_slide_link',
-    'field_s_slide_category' => 'field_s_slide_category',
-    'title' => 'title',
-    'field_s_image_image' => 'field_s_image_image',
-    'nothing' => 'nothing',
     'counter' => 'counter',
+    'field_s_image_image' => 'field_s_image_image',
+    'title' => 'title',
+    'field_s_image_caption' => 'title',
+    'field_s_slide_weight' => 'field_s_slide_weight',
+    'field_s_slide_category' => 'field_s_slide_category',
+    'field_s_slide_link' => 'field_s_slide_link',
     'edit_node' => 'edit_node',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_s_image_caption' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
+    'counter' => array(
       'align' => '',
       'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_s_slide_link' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_s_slide_category' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
+      'empty_column' => 1,
     ),
     'field_s_image_image' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
-      'empty_column' => 0,
+      'empty_column' => 1,
     ),
-    'nothing' => array(
+    'title' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => ' / ',
+      'empty_column' => 1,
+    ),
+    'field_s_image_caption' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
-      'empty_column' => 0,
+      'empty_column' => 1,
     ),
-    'counter' => array(
+    'field_s_slide_weight' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
-      'empty_column' => 0,
+      'empty_column' => 1,
+    ),
+    'field_s_slide_category' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'field_s_slide_link' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
     ),
     'edit_node' => array(
       'align' => '',
       'separator' => '',
-      'empty_column' => 0,
+      'empty_column' => 1,
     ),
   );
   $handler->display->display_options['style_options']['override'] = 1;
@@ -886,6 +883,7 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = 'Title and Caption';
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
@@ -929,6 +927,33 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['fields']['field_s_image_caption']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_s_image_caption']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_s_image_caption']['field_api_classes'] = 0;
+  /* Field: Content: Weight */
+  $handler->display->display_options['fields']['field_s_slide_weight']['id'] = 'field_s_slide_weight';
+  $handler->display->display_options['fields']['field_s_slide_weight']['table'] = 'field_data_field_s_slide_weight';
+  $handler->display->display_options['fields']['field_s_slide_weight']['field'] = 'field_s_slide_weight';
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_s_slide_weight']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_s_slide_weight']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_s_slide_weight']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_s_slide_weight']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  $handler->display->display_options['fields']['field_s_slide_weight']['field_api_classes'] = 0;
   /* Field: Content: Category */
   $handler->display->display_options['fields']['field_s_slide_category']['id'] = 'field_s_slide_category';
   $handler->display->display_options['fields']['field_s_slide_category']['table'] = 'field_data_field_s_slide_category';
@@ -951,7 +976,6 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['fields']['field_s_slide_category']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_s_slide_category']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_s_slide_category']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_s_slide_category']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_s_slide_category']['field_api_classes'] = 0;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_s_slide_link']['id'] = 'field_s_slide_link';
@@ -1020,13 +1044,21 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'stanford_slide' => 'stanford_slide',
   );
-  /* Filter criterion: Content: Group (field_s_slide_group) */
-  $handler->display->display_options['filters']['field_s_slide_group_value']['id'] = 'field_s_slide_group_value';
-  $handler->display->display_options['filters']['field_s_slide_group_value']['table'] = 'field_data_field_s_slide_group';
-  $handler->display->display_options['filters']['field_s_slide_group_value']['field'] = 'field_s_slide_group_value';
-  $handler->display->display_options['filters']['field_s_slide_group_value']['value'] = array(
-    'home' => 'home',
-  );
+  /* Filter criterion: Content: Category (field_s_slide_category) */
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['id'] = 'field_s_slide_category_tid';
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['table'] = 'field_data_field_s_slide_category';
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['field'] = 'field_s_slide_category_tid';
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['expose']['operator_id'] = 'field_s_slide_category_tid_op';
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['expose']['label'] = 'Filter by Category';
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['expose']['operator'] = 'field_s_slide_category_tid_op';
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['expose']['identifier'] = 'field_s_slide_category_tid';
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['expose']['reduce'] = 0;
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['reduce_duplicates'] = 0;
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['vocabulary'] = 'stanford_slide_category';
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['hierarchy'] = 1;
+  $handler->display->display_options['filters']['field_s_slide_category_tid']['error_message'] = 1;
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
@@ -1384,6 +1416,18 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['filters']['field_s_slide_group_value']['value'] = array(
     'home' => 'home',
   );
+  /* Filter criterion: Field collection item: Image (field_s_image_image:width) */
+  $handler->display->display_options['filters']['field_s_image_image_width']['id'] = 'field_s_image_image_width';
+  $handler->display->display_options['filters']['field_s_image_image_width']['table'] = 'field_data_field_s_image_image';
+  $handler->display->display_options['filters']['field_s_image_image_width']['field'] = 'field_s_image_image_width';
+  $handler->display->display_options['filters']['field_s_image_image_width']['relationship'] = 'field_s_image_info_value';
+  $handler->display->display_options['filters']['field_s_image_image_width']['operator'] = '>';
+  $handler->display->display_options['filters']['field_s_image_image_width']['value']['value'] = '0';
+  $handler->display->display_options['filters']['field_s_image_image_width']['expose']['operator_id'] = 'field_s_image_image_width_op';
+  $handler->display->display_options['filters']['field_s_image_image_width']['expose']['label'] = 'Image (field_s_image_image:width)';
+  $handler->display->display_options['filters']['field_s_image_image_width']['expose']['operator'] = 'field_s_image_image_width_op';
+  $handler->display->display_options['filters']['field_s_image_image_width']['expose']['identifier'] = 'field_s_image_image_width';
+  $handler->display->display_options['filters']['field_s_image_image_width']['expose']['multiple'] = FALSE;
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');

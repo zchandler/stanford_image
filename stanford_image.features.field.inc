@@ -611,7 +611,7 @@ function stanford_image_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'med-profile',
+            'image_style' => '',
           ),
           'type' => 'image',
           'weight' => '6',
@@ -1420,9 +1420,10 @@ function stanford_image_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'hidden',
+          'type' => 'taxonomy_term_reference_link',
           'weight' => '1',
         ),
         'stanford_12_col_banner' => array(
@@ -1470,7 +1471,7 @@ function stanford_image_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '7',
+        'weight' => '5',
       ),
     ),
   );
@@ -1507,9 +1508,10 @@ function stanford_image_field_default_fields() {
       'description' => 'Identifies the group in which this slide belongs.',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'list',
           'settings' => array(),
-          'type' => 'hidden',
+          'type' => 'list_default',
           'weight' => '3',
         ),
         'stanford_12_col_banner' => array(
@@ -1597,9 +1599,10 @@ function stanford_image_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'link',
           'settings' => array(),
-          'type' => 'hidden',
+          'type' => 'link_default',
           'weight' => '2',
         ),
         'stanford_12_col_banner' => array(
@@ -1689,9 +1692,15 @@ function stanford_image_field_default_fields() {
       'description' => 'If this image is part of a group, the weight helps determine the sorting order.  ',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
+          'label' => 'inline',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 0,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_integer',
           'weight' => '4',
         ),
         'stanford_12_col_banner' => array(
