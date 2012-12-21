@@ -5,3 +5,15 @@
  */
 
 include_once 'stanford_image.features.inc';
+
+function stanford_image_theme_registry_alter(&$theme_registry) {
+  $theme_registry['stanford_postcard__bean']['template'] = 'stanford-postcard--bean';
+  $theme_registry['stanford_postcard__bean']['path'] = drupal_get_path('module', 'stanford_image') . '/ds_layouts/stanford_postcard';
+  $theme_registry['stanford_postcard__bean']['render element'] = 'elements';
+  $theme_registry['stanford_postcard__bean']['base hook'] = 'stanford_postcard';
+  $theme_registry['stanford_postcard__bean']['type'] = 'module';
+  $theme_registry['stanford_postcard__bean']['theme path'] = drupal_get_path('module', 'stanford_image');
+  $theme_registry['stanford_postcard__bean']['preprocess functions'] = array();
+  $theme_registry['stanford_postcard__bean']['process functions'] = array();
+  //dpm($theme_registry);
+}
