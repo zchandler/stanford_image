@@ -269,6 +269,7 @@ function stanford_image_strongarm() {
   $strongarm->name = 'node_options_stanford_page';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_stanford_page'] = $strongarm;
 
@@ -278,6 +279,7 @@ function stanford_image_strongarm() {
   $strongarm->name = 'node_options_stanford_slide';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_stanford_slide'] = $strongarm;
 
