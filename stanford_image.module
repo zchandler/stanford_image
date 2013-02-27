@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Stanford Image feature.
- */
-
-include_once 'stanford_image.features.inc';
