@@ -54,6 +54,7 @@ features[field_group][] = group_s_image_border_style|field_collection_item|field
 features[field_group][] = group_s_image_border_style|field_collection_item|field_s_image_info|stanford_small_square
 features[field_group][] = group_s_image_border_style|field_collection_item|field_s_image_info|stanford_thumbnail_square
 features[field_group][] = group_s_image|field_collection_item|field_s_image_info|form
+features[variable][] = field_bundle_settings_field_collection_item__field_s_image_info
 features[views_view][] = stanford_bulk_fc_image_administration
 features[views_view][] = stanford_image_credits
 project status url = http://drupalfeatures.stanford.edu/fserver/stanford_image/7.x
