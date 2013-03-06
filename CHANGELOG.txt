@@ -1,0 +1,8 @@
+Stanford Image x.x-x.x xxxx-xx-xx
+--------------------------------------
+
+Stanford Image 7.x-2.0-alpha2 2013-03-06
+----------------------------------------
+-Added stanford_postcard BEAN type
+-Added default vocabularies
+-Added strongarm variables
