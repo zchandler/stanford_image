@@ -25,6 +25,7 @@ function stanford_image_ds_view_modes_info() {
   $ds_view_mode->label = '8-col-banner';
   $ds_view_mode->entities = array(
     'field_collection_item' => 'field_collection_item',
+    'node' => 'node',
   );
   $export['stanford_8_col_banner'] = $ds_view_mode;
 
@@ -40,7 +41,7 @@ function stanford_image_ds_view_modes_info() {
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
   $ds_view_mode->view_mode = 'stanford_large_square';
-  $ds_view_mode->label = 'Large Square';
+  $ds_view_mode->label = 'large-square';
   $ds_view_mode->entities = array(
     'field_collection_item' => 'field_collection_item',
   );

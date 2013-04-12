@@ -652,19 +652,17 @@ function stanford_image_field_group_info() {
       0 => 'field_s_image_caption',
       1 => 'field_s_image_credits',
       2 => 'field_s_image_image',
-      3 => 'field_s_image_placeholder',
-      4 => 'field_s_image_source_info',
-      5 => 'field_s_image_link',
-      6 => 'field_link_image',
+      3 => 'field_s_image_source_info',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Add/Edit Image',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_s_image|field_collection_item|field_s_image_info|form'] = $field_group;
