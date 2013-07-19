@@ -136,7 +136,7 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['style_options']['override'] = 1;
   $handler->display->display_options['style_options']['sticky'] = 1;
   $handler->display->display_options['style_options']['empty_table'] = 0;
-  /* Relationship: Field collection item: Entity with the Image (field_s_image_info) */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['field_s_image_info_bean']['id'] = 'field_s_image_info_bean';
   $handler->display->display_options['relationships']['field_s_image_info_bean']['table'] = 'field_collection_item';
   $handler->display->display_options['relationships']['field_s_image_info_bean']['field'] = 'field_s_image_info_bean';
@@ -362,7 +362,7 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['fields']['timestamp']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['timestamp']['link_to_node'] = 0;
   $handler->display->display_options['fields']['timestamp']['comments'] = 0;
-  /* Field: Block: Label */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['label']['id'] = 'label';
   $handler->display->display_options['fields']['label']['table'] = 'bean';
   $handler->display->display_options['fields']['label']['field'] = 'label';
