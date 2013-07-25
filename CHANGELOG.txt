@@ -1,6 +1,11 @@
 Stanford Image x.x-x.x xxxx-xx-xx
 --------------------------------------
 
+Stanford Image 7.x-2.0-alpha3 2013-07-25
+----------------------------------------
+-Reverted a wayward commit
+-No functional changes since 2.0-alpha2
+
 Stanford Image 7.x-2.0-alpha2 2013-03-06
 ----------------------------------------
 -Added stanford_postcard BEAN type
