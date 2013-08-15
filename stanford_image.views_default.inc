@@ -135,13 +135,13 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['style_options']['override'] = 1;
   $handler->display->display_options['style_options']['sticky'] = 1;
   $handler->display->display_options['style_options']['empty_table'] = 0;
-  /* Relationship: Field collection item: Entity with the Image (field_s_image_info) */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['field_s_image_info_bean']['id'] = 'field_s_image_info_bean';
   $handler->display->display_options['relationships']['field_s_image_info_bean']['table'] = 'field_collection_item';
   $handler->display->display_options['relationships']['field_s_image_info_bean']['field'] = 'field_s_image_info_bean';
   $handler->display->display_options['relationships']['field_s_image_info_bean']['label'] = 'Block using image';
   $handler->display->display_options['relationships']['field_s_image_info_bean']['required'] = 0;
-  /* Relationship: Field collection item: Entity with the Image (field_s_image_info) */
+  /* Relationship: Field collection item: Entity with the Featured Image (field_s_image_info) */
   $handler->display->display_options['relationships']['field_s_image_info_node']['id'] = 'field_s_image_info_node';
   $handler->display->display_options['relationships']['field_s_image_info_node']['table'] = 'field_collection_item';
   $handler->display->display_options['relationships']['field_s_image_info_node']['field'] = 'field_s_image_info_node';
@@ -337,7 +337,7 @@ function stanford_image_views_default_views() {
     'image_link' => 'file',
   );
   $handler->display->display_options['fields']['field_s_image_image']['field_api_classes'] = 0;
-  /* Field: Block: Label */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['label']['id'] = 'label';
   $handler->display->display_options['fields']['label']['table'] = 'bean';
   $handler->display->display_options['fields']['label']['field'] = 'label';
