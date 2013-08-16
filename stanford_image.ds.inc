@@ -57,6 +57,15 @@ function stanford_image_ds_view_modes_info() {
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'stanford_6_col_banner_tall';
+  $ds_view_mode->label = 'Banner 6 Column Tall';
+  $ds_view_mode->entities = array(
+    'field_collection_item' => 'field_collection_item',
+  );
+  $export['stanford_6_col_banner_tall'] = $ds_view_mode;
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
   $ds_view_mode->view_mode = 'stanford_8_col_banner';
   $ds_view_mode->label = 'Banner 8 Column';
   $ds_view_mode->entities = array(
@@ -99,6 +108,15 @@ function stanford_image_ds_view_modes_info() {
     'field_collection_item' => 'field_collection_item',
   );
   $export['stanford_9_col_banner_short'] = $ds_view_mode;
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'stanford_icon_square';
+  $ds_view_mode->label = 'Icon Square';
+  $ds_view_mode->entities = array(
+    'field_collection_item' => 'field_collection_item',
+  );
+  $export['stanford_icon_square'] = $ds_view_mode;
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
