@@ -1,6 +1,12 @@
 Stanford Image x.x-x.x xxxx-xx-xx
 --------------------------------------
 
+Stanford Image 7.x-2.0-alpha5 2013-08-19
+----------------------------------------
+By cjwest: Added the following DS view modes and associated field groups:
+  -stanford_6_col_banner_tall
+  -stanford_icon_square
+
 Stanford Image 7.x-2.0-alpha4 2013-08-15
 ----------------------------------------
 By cjwest: Updated views: vbo and Images
