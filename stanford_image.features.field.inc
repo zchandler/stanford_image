@@ -52,78 +52,100 @@ function stanford_image_field_default_fields() {
         'stanford_12_col_banner' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '2',
         ),
         'stanford_3_col_header' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '2',
         ),
         'stanford_4_col_header' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '2',
         ),
         'stanford_6_col_banner' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '3',
         ),
         'stanford_6_col_banner_short' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '2',
         ),
         'stanford_6_col_banner_tall' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '2',
         ),
         'stanford_8_col_banner' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '2',
         ),
         'stanford_8_col_banner_short' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '3',
         ),
         'stanford_8_col_banner_tall' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '2',
         ),
         'stanford_9_col_banner' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '2',
         ),
         'stanford_9_col_banner_short' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '2',
         ),
         'stanford_icon_square' => array(
@@ -135,15 +157,19 @@ function stanford_image_field_default_fields() {
         'stanford_large_scaled' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '2',
         ),
         'stanford_large_square' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '180',
+          ),
+          'type' => 'text_trimmed',
           'weight' => '8',
         ),
         'stanford_med_profile' => array(
