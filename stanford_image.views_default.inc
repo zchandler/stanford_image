@@ -38,7 +38,7 @@ function stanford_image_views_default_views() {
     'url' => 'url',
     'counter' => 'counter',
     'views_bulk_operations' => 'views_bulk_operations',
-    'field_s_image_image' => 'timestamp',
+    'field_s_image_image' => 'field_s_image_image',
     'title' => 'title',
     'timestamp' => 'title',
     'status' => 'status',
@@ -116,7 +116,7 @@ function stanford_image_views_default_views() {
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
-      'separator' => ' ',
+      'separator' => ' | ',
       'empty_column' => 0,
     ),
     'nothing' => array(
@@ -446,7 +446,7 @@ function stanford_image_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'admin/manage/images';
+  $handler->display->display_options['path'] = 'admin/bulk/images';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
