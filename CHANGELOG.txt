@@ -1,6 +1,12 @@
 Stanford Image x.x-x.x xxxx-xx-xx
 --------------------------------------
 
+Stanford Image 7.x-2.0-alpha6 2013-10-14
+----------------------------------------
+By cjwest:
+  -Added banner-image class and added a view for managing images   
+  -Added manage view, remove trim, added banner-image class
+
 Stanford Image 7.x-2.0-alpha5 2013-08-19
 ----------------------------------------
 By cjwest: Added the following DS view modes and associated field groups:
