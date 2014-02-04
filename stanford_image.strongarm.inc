@@ -38,7 +38,7 @@ function stanford_image_strongarm() {
         'custom_settings' => TRUE,
       ),
       'stanford_thumbnail' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'stanford_thmb_landscape' => array(
         'custom_settings' => FALSE,
@@ -47,7 +47,7 @@ function stanford_image_strongarm() {
         'custom_settings' => FALSE,
       ),
       'stanford_thmb_square' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'stanford_sm_landscape' => array(
         'custom_settings' => FALSE,
@@ -77,7 +77,7 @@ function stanford_image_strongarm() {
         'custom_settings' => FALSE,
       ),
       'stanford_large_square' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'stanford_3_col_header' => array(
         'custom_settings' => FALSE,
@@ -89,7 +89,7 @@ function stanford_image_strongarm() {
         'custom_settings' => FALSE,
       ),
       'stanford_4_col_header' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       '6_col_header' => array(
         'custom_settings' => FALSE,
@@ -101,6 +101,18 @@ function stanford_image_strongarm() {
         'custom_settings' => FALSE,
       ),
       'test' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_large_scaled' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_medium_square' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_small_square' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_thumbnail_square' => array(
         'custom_settings' => TRUE,
       ),
     ),
