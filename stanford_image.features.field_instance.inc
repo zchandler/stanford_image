@@ -10,8 +10,7 @@
 function stanford_image_field_default_field_instances() {
   $field_instances = array();
 
-
-// Exported field_instance: 'field_collection_item-field_s_image_info-field_s_image_caption'
+  // Exported field_instance: 'field_collection_item-field_s_image_info-field_s_image_caption'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_caption'] = array(
     'bundle' => 'field_s_image_info',
     'default_value' => NULL,
@@ -657,6 +656,7 @@ function stanford_image_field_default_field_instances() {
       'module' => 'image',
       'settings' => array(
         'insert' => 0,
+        'insert_absolute' => FALSE,
         'insert_class' => '',
         'insert_default' => 'auto',
         'insert_styles' => array(
@@ -860,15 +860,9 @@ function stanford_image_field_default_field_instances() {
   t('Credits');
   t('Enter the original name, if changed, and other information to aid in finding the original image.');
   t('Enter the photographer or organization credits.');
-  t('File');
-  t('File Insert');
   t('Image');
-  t('Image Insert');
   t('Optionally enter information to appear as a caption for this image. This text may be trimmed to 180 characters.');
-  t('This displays an image in the block.');
-  t('Upload a banner image');
-  t('Upload and insert an image into your content.');
-  t('Upload and insert file links into your content');
+  t('Source Info');
 
   return $field_instances;
 }

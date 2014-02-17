@@ -53,7 +53,7 @@ function stanford_image_strongarm() {
         'custom_settings' => FALSE,
       ),
       'stanford_sm_profile' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'stanford_sm_square' => array(
         'custom_settings' => FALSE,
@@ -80,7 +80,7 @@ function stanford_image_strongarm() {
         'custom_settings' => TRUE,
       ),
       'stanford_3_col_header' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'stanford_3_col_well_header' => array(
         'custom_settings' => FALSE,
@@ -114,6 +114,27 @@ function stanford_image_strongarm() {
       ),
       'stanford_thumbnail_square' => array(
         'custom_settings' => TRUE,
+      ),
+      'stanford_6_col_banner_short' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_6_col_banner_tall' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_8_col_banner_short' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_8_col_banner_tall' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_9_col_banner_short' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_icon_square' => array(
+        'custom_settings' => TRUE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(
