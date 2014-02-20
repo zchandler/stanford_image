@@ -662,7 +662,7 @@ function stanford_image_field_group_info() {
         'classes' => '',
         'description' => '',
       ),
-      'formatter' => 'open',
+      'formatter' => 'closed',
     ),
   );
   $export['group_s_image|field_collection_item|field_s_image_info|form'] = $field_group;
