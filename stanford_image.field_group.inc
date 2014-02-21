@@ -340,7 +340,7 @@ function stanford_image_field_group_info() {
     'format_settings' => array(
       'label' => 'Image Border Style',
       'instance_settings' => array(
-        'classes' => 'border-simple-nowidth border-shadow ',
+        'classes' => 'border-simple-nowidth border-shadow',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -500,7 +500,7 @@ function stanford_image_field_group_info() {
     'format_settings' => array(
       'label' => 'Image Border Style',
       'instance_settings' => array(
-        'classes' => 'border-simple-nowidth border-shadow ',
+        'classes' => 'border-simple-nowidth border-shadow',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -562,7 +562,7 @@ function stanford_image_field_group_info() {
     'format_settings' => array(
       'label' => 'Image Border Style',
       'instance_settings' => array(
-        'classes' => 'border-simple-nowidth border-shadow ',
+        'classes' => 'border-simple-nowidth border-shadow',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -593,7 +593,7 @@ function stanford_image_field_group_info() {
     'format_settings' => array(
       'label' => 'Image Border Style',
       'instance_settings' => array(
-        'classes' => 'border-simple-nowidth border-shadow ',
+        'classes' => '',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
