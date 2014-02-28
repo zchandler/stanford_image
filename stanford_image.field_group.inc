@@ -654,7 +654,7 @@ function stanford_image_field_group_info() {
       2 => 'field_s_image_image',
       3 => 'field_s_image_source_info',
     ),
-    'format_type' => 'htab',
+    'format_type' => 'fieldset',
     'format_settings' => array(
       'label' => 'Add/Edit Image',
       'instance_settings' => array(
@@ -662,7 +662,7 @@ function stanford_image_field_group_info() {
         'classes' => '',
         'description' => '',
       ),
-      'formatter' => 'closed',
+      'formatter' => 'collapsed',
     ),
   );
   $export['group_s_image|field_collection_item|field_s_image_info|form'] = $field_group;
