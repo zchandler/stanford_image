@@ -250,7 +250,7 @@ function stanford_image_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 3,
       ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
@@ -443,7 +443,7 @@ function stanford_image_field_default_field_instances() {
           'image_style' => '3-col-header',
         ),
         'type' => 'image',
-        'weight' => 6,
+        'weight' => 3,
       ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
