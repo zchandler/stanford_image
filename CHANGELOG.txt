@@ -1,8 +1,7 @@
 Stanford Image x.x-x.x xxxx-xx-xx
 --------------------------------------
 
-Stanford Image 7.x-2.0-alpha2 2013-03-06
+Stanford Image 7.x-3.0-alpha1 2014-03-11
 ----------------------------------------
--Added stanford_postcard BEAN type
--Added default vocabularies
--Added strongarm variables
+- Features 2.x compatible version.
+- Restored a number of view modes and image styles.

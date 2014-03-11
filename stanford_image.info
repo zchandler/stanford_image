@@ -79,4 +79,3 @@ features[field_instance][] = field_collection_item-field_s_image_info-field_s_im
 features[variable][] = field_bundle_settings_field_collection_item__field_s_image_info
 features[views_view][] = stanford_bulk_fc_image_administration
 features[views_view][] = stanford_image_credits
-project status url = http://drupalfeatures.stanford.edu/fserver/stanford_image/7.x
