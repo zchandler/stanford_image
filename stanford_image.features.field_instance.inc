@@ -98,10 +98,8 @@ function stanford_image_field_default_field_instances() {
       'stanford_9_col_banner' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_9_col_banner_short' => array(
