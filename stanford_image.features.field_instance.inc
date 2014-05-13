@@ -15,7 +15,7 @@ function stanford_image_field_default_field_instances() {
     'bundle' => 'field_s_image_info',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Optionally enter information to appear as a caption for this image. This text may be trimmed to 180 characters.',
+    'description' => 'Optionally enter information to appear as a caption for this image.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -26,73 +26,57 @@ function stanford_image_field_default_field_instances() {
       'stanford_3_col_header' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_6_col_banner' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 3,
       ),
       'stanford_6_col_banner_short' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_6_col_banner_tall' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_8_col_banner' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_8_col_banner_short' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 3,
       ),
       'stanford_8_col_banner_tall' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_9_col_banner' => array(
@@ -105,19 +89,15 @@ function stanford_image_field_default_field_instances() {
       'stanford_9_col_banner_short' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_12_col_banner' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_icon_square' => array(
@@ -129,19 +109,15 @@ function stanford_image_field_default_field_instances() {
       'stanford_large_scaled' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_large_square' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 180,
-        ),
-        'type' => 'text_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 8,
       ),
       'stanford_med_profile' => array(
@@ -859,7 +835,7 @@ function stanford_image_field_default_field_instances() {
   t('Enter the original name, if changed, and other information to aid in finding the original image.');
   t('Enter the photographer or organization credits.');
   t('Image');
-  t('Optionally enter information to appear as a caption for this image. This text may be trimmed to 180 characters.');
+  t('Optionally enter information to appear as a caption for this image.');
   t('Source Info');
 
   return $field_instances;
