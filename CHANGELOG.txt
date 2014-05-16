@@ -1,6 +1,10 @@
 Stanford Image x.x-x.x xxxx-xx-xx
 --------------------------------------
 
+Stanford Image 7.x-3.0-alpha3 2014-05-16
+----------------------------------------
+- BASIC-747 | Removed all trimmed text and set to default
+
 Stanford Image 7.x-3.0-alpha2 2014-03-31
 ----------------------------------------
 Changes since 7.x-3.0-alpha2:
