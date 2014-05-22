@@ -680,7 +680,7 @@ function stanford_image_field_default_field_instances() {
     'bundle' => 'field_s_image_info',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the original name, if changed, and other information to aid in finding the original image.',
+    'description' => 'This text field gives you a place to record source and other information for identifying this image. For example, if it has changed, you can enter the original name of this image. This record-keeping information is hidden and is not displayed with the image.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -821,7 +821,7 @@ function stanford_image_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'size' => 160,
       ),
       'type' => 'text_textfield',
       'weight' => 34,
@@ -832,11 +832,11 @@ function stanford_image_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Caption');
   t('Credits');
-  t('Enter the original name, if changed, and other information to aid in finding the original image.');
   t('Enter the photographer or organization credits.');
   t('Image');
   t('Optionally enter information to appear as a caption for this image.');
   t('Source Info');
+  t('This text field gives you a place to record source and other information for identifying this image. For example, if it has changed, you can enter the original name of this image. This record-keeping information is hidden and is not displayed with the image.');
 
   return $field_instances;
 }
