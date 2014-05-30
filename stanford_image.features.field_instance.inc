@@ -397,7 +397,10 @@ function stanford_image_field_default_field_instances() {
   $field_instances['field_collection_item-field_s_image_info-field_s_image_image'] = array(
     'bundle' => 'field_s_image_info',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Your image will be scaled and cropped when it is displayed. To learn exact dimensions for cropping your image go to <a href="https://sites-jumpstart.stanford.edu/user-guide/multimedia/banner-and-block-image-sizes-and-dimensions">Banner and Block Image Sizes and Dimensions</a>.
+
+
+',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -630,26 +633,30 @@ function stanford_image_field_default_field_instances() {
       'module' => 'image',
       'settings' => array(
         'insert' => 0,
-        'insert_absolute' => FALSE,
+        'insert_absolute' => 0,
         'insert_class' => '',
         'insert_default' => 'auto',
         'insert_styles' => array(
           'auto' => 'auto',
+          'icon_link' => 0,
           'image' => 0,
           'image_3-col-header' => 0,
-          'image_3-col-well-header' => 0,
-          'image_3-col-well-profile' => 0,
           'image_4-col-header' => 0,
           'image_6-col-banner' => 0,
-          'image_6-col-header' => 0,
-          'image_6-col-header-short' => 0,
+          'image_6-col-banner-short' => 0,
+          'image_6-col-banner-tall' => 0,
           'image_8-col-banner' => 0,
+          'image_8-col-banner-short' => 0,
+          'image_8-col-banner-tall' => 0,
           'image_9-col-banner' => 0,
+          'image_9-col-banner-short' => 0,
           'image_12-col-banner' => 0,
-          'image_icon' => 0,
+          'image_icon-square' => 0,
           'image_large' => 0,
           'image_large-landscape' => 0,
+          'image_large-landscape-scaled' => 0,
           'image_large-profile' => 0,
+          'image_large-profile-scaled' => 0,
           'image_large-scaled' => 0,
           'image_large-square' => 0,
           'image_med-landscape' => 0,
@@ -658,7 +665,9 @@ function stanford_image_field_default_field_instances() {
           'image_med-profile-scaled' => 0,
           'image_med-square' => 0,
           'image_medium' => 0,
+          'image_page-width' => 0,
           'image_sm-landscape' => 0,
+          'image_sm-profile' => 0,
           'image_sm-square' => 0,
           'image_thmb-landscape' => 0,
           'image_thmb-profile' => 0,
@@ -837,6 +846,10 @@ function stanford_image_field_default_field_instances() {
   t('Optionally enter information to appear as a caption for this image.');
   t('Source Info');
   t('This text field gives you a place to record source and other information for identifying this image. For example, if it has changed, you can enter the original name of this image. This record-keeping information is hidden and is not displayed with the image.');
+  t('Your image will be scaled and cropped when it is displayed. To learn exact dimensions for cropping your image go to <a href="https://sites-jumpstart.stanford.edu/user-guide/multimedia/banner-and-block-image-sizes-and-dimensions">Banner and Block Image Sizes and Dimensions</a>.
+
+
+');
 
   return $field_instances;
 }
