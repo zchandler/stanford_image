@@ -4,6 +4,7 @@ core = 7.x
 package = Stanford
 version = 7.x-3.0
 project = stanford_image
+project status url = "https://github.com/SU-SWS/stanford_image"
 dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = features
