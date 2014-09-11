@@ -134,12 +134,12 @@ function stanford_image_views_default_views() {
     ),
   );
   $handler->display->display_options['style_options']['sticky'] = TRUE;
-  /* Relationship: Field collection item: Entity with the Image (field_s_image_info) */
+  /* Relationship: Field collection item: Entity with the Featured Image (field_s_image_info) */
   $handler->display->display_options['relationships']['field_s_image_info_bean']['id'] = 'field_s_image_info_bean';
   $handler->display->display_options['relationships']['field_s_image_info_bean']['table'] = 'field_collection_item';
   $handler->display->display_options['relationships']['field_s_image_info_bean']['field'] = 'field_s_image_info_bean';
   $handler->display->display_options['relationships']['field_s_image_info_bean']['label'] = 'Block using image';
-  /* Relationship: Field collection item: Entity with the Image (field_s_image_info) */
+  /* Relationship: Field collection item: Entity with the Featured Image (field_s_image_info) */
   $handler->display->display_options['relationships']['field_s_image_info_node']['id'] = 'field_s_image_info_node';
   $handler->display->display_options['relationships']['field_s_image_info_node']['table'] = 'field_collection_item';
   $handler->display->display_options['relationships']['field_s_image_info_node']['field'] = 'field_s_image_info_node';
