@@ -62,7 +62,7 @@ function stanford_image_field_group_info() {
       'instance_settings' => array(
         'classes' => 'banner-overlay',
         'description' => '',
-        'show_label' => '1',
+        'show_label' => '0',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
@@ -71,6 +71,37 @@ function stanford_image_field_group_info() {
     ),
   );
   $export['group_s_banner_overlay|field_collection_item|field_s_image_info|stanford_12_col_banner'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_banner_overlay|field_collection_item|field_s_image_info|stanford_12_col_banner_tall';
+  $field_group->group_name = 'group_s_banner_overlay';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_s_image_info';
+  $field_group->mode = 'stanford_12_col_banner_tall';
+  $field_group->parent_name = 'group_s_image_border_style';
+  $field_group->data = array(
+    'label' => 'Banner Overlay',
+    'weight' => '7',
+    'children' => array(
+      0 => 'field_s_image_caption',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Banner Overlay',
+      'instance_settings' => array(
+        'classes' => 'banner-overlay',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_s_banner_overlay|field_collection_item|field_s_image_info|stanford_12_col_banner_tall'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -382,6 +413,38 @@ function stanford_image_field_group_info() {
     ),
   );
   $export['group_s_image_border_style|field_collection_item|field_s_image_info|stanford_12_col_banner'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_image_border_style|field_collection_item|field_s_image_info|stanford_12_col_banner_tall';
+  $field_group->group_name = 'group_s_image_border_style';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_s_image_info';
+  $field_group->mode = 'stanford_12_col_banner_tall';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Image Border Style',
+    'weight' => '9',
+    'children' => array(
+      0 => 'field_s_image_image',
+      1 => 'group_s_banner_overlay',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Image Border Style',
+      'instance_settings' => array(
+        'classes' => 'border-simple border-shadow border-bottom',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_s_image_border_style|field_collection_item|field_s_image_info|stanford_12_col_banner_tall'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

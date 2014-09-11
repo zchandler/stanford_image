@@ -15,6 +15,7 @@ function stanford_image_ds_view_modes_info() {
   $ds_view_mode->view_mode = 'stanford_12_col_banner';
   $ds_view_mode->label = 'Banner 12 Column';
   $ds_view_mode->entities = array(
+    'bean' => 'bean',
     'field_collection_item' => 'field_collection_item',
   );
   $export['stanford_12_col_banner'] = $ds_view_mode;
@@ -97,6 +98,7 @@ function stanford_image_ds_view_modes_info() {
   $ds_view_mode->view_mode = 'stanford_9_col_banner';
   $ds_view_mode->label = 'Banner 9 Column ';
   $ds_view_mode->entities = array(
+    'bean' => 'bean',
     'field_collection_item' => 'field_collection_item',
   );
   $export['stanford_9_col_banner'] = $ds_view_mode;
