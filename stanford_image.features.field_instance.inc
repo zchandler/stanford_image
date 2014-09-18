@@ -58,6 +58,13 @@ function stanford_image_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'stanford_6_col_photo_landscape' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
       'stanford_8_col_banner' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -257,6 +264,13 @@ function stanford_image_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 4,
+      ),
+      'stanford_6_col_photo_landscape' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
       ),
       'stanford_8_col_banner' => array(
         'label' => 'above',
@@ -475,6 +489,16 @@ function stanford_image_field_default_field_instances() {
         'type' => 'image',
         'weight' => 1,
       ),
+      'stanford_6_col_photo_landscape' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '6-col-photo-landscape',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
       'stanford_8_col_banner' => array(
         'label' => 'hidden',
         'module' => 'image',
@@ -540,7 +564,7 @@ function stanford_image_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'stanford-12-col-banner-tall',
+          'image_style' => '12-col-banner-tall',
         ),
         'type' => 'image',
         'weight' => 6,
@@ -749,6 +773,12 @@ function stanford_image_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 3,
+      ),
+      'stanford_6_col_photo_landscape' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'stanford_8_col_banner' => array(
         'label' => 'above',
