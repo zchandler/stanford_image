@@ -108,7 +108,7 @@ function stanford_image_field_default_field_instances() {
         'weight' => 2,
       ),
       'stanford_12_col_banner_tall' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
