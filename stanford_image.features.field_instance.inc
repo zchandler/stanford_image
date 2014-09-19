@@ -108,7 +108,7 @@ function stanford_image_field_default_field_instances() {
         'weight' => 2,
       ),
       'stanford_12_col_banner_tall' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -424,10 +424,7 @@ function stanford_image_field_default_field_instances() {
   $field_instances['field_collection_item-field_s_image_info-field_s_image_image'] = array(
     'bundle' => 'field_s_image_info',
     'deleted' => 0,
-    'description' => 'Your image will be scaled and cropped when it is displayed. To learn exact dimensions for cropping your image go to <a href="https://sites-jumpstart.stanford.edu/user-guide/multimedia/banner-and-block-image-sizes-and-dimensions">Banner and Block Image Sizes and Dimensions</a>.
-
-
-',
+    'description' => 'Your image will be scaled and cropped when it is displayed. To learn exact dimensions for cropping your image go to <a href="https://sites-jumpstart.stanford.edu/user-guide/multimedia/banner-and-block-image-sizes-and-dimensions">Banner and Block Image Sizes and Dimensions</a>.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -905,10 +902,7 @@ function stanford_image_field_default_field_instances() {
   t('Optionally enter information to appear as a caption for this image.');
   t('Source Info');
   t('This text field gives you a place to record source and other information for identifying this image. For example, if it has changed, you can enter the original name of this image. This record-keeping information is hidden and is not displayed with the image.');
-  t('Your image will be scaled and cropped when it is displayed. To learn exact dimensions for cropping your image go to <a href="https://sites-jumpstart.stanford.edu/user-guide/multimedia/banner-and-block-image-sizes-and-dimensions">Banner and Block Image Sizes and Dimensions</a>.
-
-
-');
+  t('Your image will be scaled and cropped when it is displayed. To learn exact dimensions for cropping your image go to <a href="https://sites-jumpstart.stanford.edu/user-guide/multimedia/banner-and-block-image-sizes-and-dimensions">Banner and Block Image Sizes and Dimensions</a>.');
 
   return $field_instances;
 }
