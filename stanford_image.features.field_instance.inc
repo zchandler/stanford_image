@@ -213,7 +213,7 @@ function stanford_image_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 2,
+        'rows' => 10,
       ),
       'type' => 'text_textarea',
       'weight' => 35,
@@ -413,7 +413,7 @@ function stanford_image_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 2,
+        'rows' => 10,
       ),
       'type' => 'text_textarea',
       'weight' => 33,
