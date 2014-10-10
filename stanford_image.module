@@ -26,7 +26,8 @@ function stanford_image_form_alter(&$form, &$form_state, $form_id) {
       if (!is_int($field_index)) {
         continue;
       }
-      $field_values['#attributes']['style'][] = "height: 250px;";
+      $height = intval($field_values["#rows"] * 13);
+      $field_values['#attributes']['style'][] = "height: " . $height . "px;";
     }
   }
 
