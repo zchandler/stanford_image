@@ -36,6 +36,7 @@ features[ds_view_modes][] = stanford_8_col_banner_short
 features[ds_view_modes][] = stanford_8_col_banner_tall
 features[ds_view_modes][] = stanford_9_col_banner
 features[ds_view_modes][] = stanford_9_col_banner_short
+features[ds_view_modes][] = stanford_icon_profile
 features[ds_view_modes][] = stanford_icon_square
 features[ds_view_modes][] = stanford_large_scaled
 features[ds_view_modes][] = stanford_large_square
