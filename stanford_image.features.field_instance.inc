@@ -10,7 +10,8 @@
 function stanford_image_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_s_image_info-field_s_image_caption'
+  // Exported field_instance:
+  // 'field_collection_item-field_s_image_info-field_s_image_caption'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_caption'] = array(
     'bundle' => 'field_s_image_info',
     'default_value' => NULL,
@@ -120,6 +121,12 @@ function stanford_image_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 2,
       ),
+      'stanford_icon_scaled' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'stanford_icon_square' => array(
         'label' => 'above',
         'settings' => array(),
@@ -153,6 +160,12 @@ function stanford_image_field_default_field_instances() {
         'weight' => 2,
       ),
       'stanford_sm_profile' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'stanford_sm_scaled' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -226,7 +239,8 @@ function stanford_image_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_s_image_info-field_s_image_credits'
+  // Exported field_instance:
+  // 'field_collection_item-field_s_image_info-field_s_image_credits'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_credits'] = array(
     'bundle' => 'field_s_image_info',
     'default_value' => NULL,
@@ -326,6 +340,12 @@ function stanford_image_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 4,
       ),
+      'stanford_icon_scaled' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
       'stanford_icon_square' => array(
         'label' => 'above',
         'settings' => array(),
@@ -359,6 +379,12 @@ function stanford_image_field_default_field_instances() {
         'weight' => 1,
       ),
       'stanford_sm_profile' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'stanford_sm_scaled' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -432,7 +458,8 @@ function stanford_image_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_s_image_info-field_s_image_image'
+  // Exported field_instance:
+  // 'field_collection_item-field_s_image_info-field_s_image_image'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_image'] = array(
     'bundle' => 'field_s_image_info',
     'deleted' => 0,
@@ -588,6 +615,16 @@ function stanford_image_field_default_field_instances() {
         'type' => 'image',
         'weight' => 6,
       ),
+      'stanford_icon_scaled' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'icon-scaled',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
       'stanford_icon_square' => array(
         'label' => 'hidden',
         'module' => 'image',
@@ -647,6 +684,16 @@ function stanford_image_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 6,
+      ),
+      'stanford_sm_scaled' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'sm-scaled',
+        ),
+        'type' => 'image',
+        'weight' => 1,
       ),
       'stanford_small_square' => array(
         'label' => 'hidden',
@@ -750,7 +797,8 @@ function stanford_image_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_s_image_info-field_s_image_source_info'
+  // Exported field_instance:
+  // 'field_collection_item-field_s_image_info-field_s_image_source_info'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_source_info'] = array(
     'bundle' => 'field_s_image_info',
     'default_value' => NULL,
@@ -847,6 +895,12 @@ function stanford_image_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 3,
       ),
+      'stanford_icon_scaled' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'stanford_icon_square' => array(
         'label' => 'above',
         'settings' => array(),
@@ -878,6 +932,12 @@ function stanford_image_field_default_field_instances() {
         'weight' => 3,
       ),
       'stanford_sm_profile' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'stanford_sm_scaled' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
