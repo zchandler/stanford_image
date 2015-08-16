@@ -85,7 +85,7 @@ function stanford_image_field_default_field_bases() {
     'locked' => 0,
     'module' => 'field_collection',
     'settings' => array(
-      'hide_blank_items' => TRUE,
+      'hide_blank_items' => 1,
       'path' => '',
     ),
     'translatable' => 0,
