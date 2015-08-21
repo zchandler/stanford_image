@@ -269,7 +269,7 @@ function stanford_image_field_default_field_instances() {
       'stanford_4_col_header' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => arra,
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
       ),
@@ -294,7 +294,7 @@ function stanford_image_field_default_field_instances() {
       'stanford_6_col_photo_landscape' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => arra,
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 6,
       ),
