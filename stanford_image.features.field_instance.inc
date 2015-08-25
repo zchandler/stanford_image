@@ -115,6 +115,12 @@ function stanford_image_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'stanford_full_width_banner' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'stanford_icon_profile' => array(
         'label' => 'above',
         'settings' => array(),
@@ -329,6 +335,12 @@ function stanford_image_field_default_field_instances() {
         'weight' => 4,
       ),
       'stanford_12_col_banner_tall' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'stanford_full_width_banner' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -601,6 +613,16 @@ function stanford_image_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => '12-col-banner-tall',
+        ),
+        'type' => 'image',
+        'weight' => 6,
+      ),
+      'stanford_full_width_banner' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'full-width-banner',
         ),
         'type' => 'image',
         'weight' => 6,
@@ -884,6 +906,12 @@ function stanford_image_field_default_field_instances() {
         'weight' => 3,
       ),
       'stanford_12_col_banner_tall' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'stanford_full_width_banner' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

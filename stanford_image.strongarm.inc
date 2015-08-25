@@ -166,6 +166,9 @@ function stanford_image_strongarm() {
       'stanford_tiles' => array(
         'custom_settings' => FALSE,
       ),
+      'stanford_full_width_banner' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
