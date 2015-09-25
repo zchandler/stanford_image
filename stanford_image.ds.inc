@@ -82,6 +82,7 @@ function stanford_image_ds_view_modes_info() {
   $ds_view_mode->view_mode = 'stanford_8_col_banner';
   $ds_view_mode->label = 'Banner 8 Column';
   $ds_view_mode->entities = array(
+    'bean' => 'bean',
     'field_collection_item' => 'field_collection_item',
     'node' => 'node',
   );
