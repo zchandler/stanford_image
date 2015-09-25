@@ -148,7 +148,7 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
-    $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
     'action::views_bulk_operations_delete_item' => array(
       'selected' => 0,
       'postpone_processing' => 0,
@@ -200,7 +200,7 @@ function stanford_image_views_default_views() {
       'label' => '',
     ),
   );
-/* Field: Field collection item: URL */
+  /* Field: Field collection item: URL */
   $handler->display->display_options['fields']['url']['id'] = 'url';
   $handler->display->display_options['fields']['url']['table'] = 'views_entity_field_collection_item';
   $handler->display->display_options['fields']['url']['field'] = 'url';
