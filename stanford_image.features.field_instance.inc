@@ -3,13 +3,11 @@
  * @file
  * stanford_image.features.field_instance.inc
  */
-
 /**
  * Implements hook_field_default_field_instances().
  */
 function stanford_image_field_default_field_instances() {
   $field_instances = array();
-
   // Exported field_instance:
   // 'field_collection_item-field_s_image_info-field_s_image_caption'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_caption'] = array(
@@ -28,7 +26,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -37,7 +34,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -46,7 +42,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 3,
@@ -55,7 +50,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -64,7 +58,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -73,7 +66,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 4,
@@ -82,7 +74,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -91,7 +82,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 3,
@@ -100,7 +90,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -109,7 +98,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -118,7 +106,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -127,7 +114,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -136,7 +122,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -175,7 +160,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -184,7 +168,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 8,
@@ -280,7 +263,6 @@ function stanford_image_field_default_field_instances() {
       'weight' => 35,
     ),
   );
-
   // Exported field_instance:
   // 'field_collection_item-field_s_image_info-field_s_image_credits'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_credits'] = array(
@@ -299,7 +281,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 3,
@@ -308,7 +289,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 2,
@@ -335,7 +315,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 6,
@@ -416,7 +395,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 4,
@@ -425,7 +403,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-
         ),
         'type' => 'text_default',
         'weight' => 9,
@@ -521,7 +498,6 @@ function stanford_image_field_default_field_instances() {
       'weight' => 33,
     ),
   );
-
   // Exported field_instance:
   // 'field_collection_item-field_s_image_info-field_s_image_image'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_image'] = array(
@@ -533,7 +509,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'page-width',
         ),
@@ -544,7 +519,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '3-col-header',
         ),
@@ -555,7 +529,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '4-col-header',
         ),
@@ -566,7 +539,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '6-col-banner',
         ),
@@ -577,7 +549,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '6-col-banner',
         ),
@@ -588,7 +559,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '6-col-banner-tall',
         ),
@@ -599,7 +569,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '6-col-photo-landscape',
         ),
@@ -610,7 +579,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '8-col-banner',
         ),
@@ -621,7 +589,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '8-col-banner-short',
         ),
@@ -632,7 +599,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '8-col-banner-tall',
         ),
@@ -643,7 +609,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '9-col-banner',
         ),
@@ -654,7 +619,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '9-col-banner-short',
         ),
@@ -665,7 +629,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '12-col-banner',
         ),
@@ -676,7 +639,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => '12-col-banner-tall',
         ),
@@ -687,7 +649,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'full-width-banner',
         ),
@@ -719,7 +680,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'icon-profile',
         ),
@@ -730,7 +690,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'icon-scaled',
         ),
@@ -741,7 +700,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'icon-square',
         ),
@@ -752,7 +710,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'large-scaled',
         ),
@@ -763,7 +720,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'large-square',
         ),
@@ -774,7 +730,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'med-profile',
         ),
@@ -785,7 +740,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'med-square',
         ),
@@ -796,7 +750,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'sm-profile',
         ),
@@ -807,7 +760,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'sm-scaled',
         ),
@@ -818,7 +770,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'sm-square',
         ),
@@ -829,7 +780,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'thmb-square',
         ),
@@ -840,7 +790,6 @@ function stanford_image_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-
           'image_link' => '',
           'image_style' => 'med-profile',
         ),
@@ -918,7 +867,6 @@ function stanford_image_field_default_field_instances() {
       'weight' => 32,
     ),
   );
-
   // Exported field_instance:
   // 'field_collection_item-field_s_image_info-field_s_image_source_info'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_source_info'] = array(
@@ -1114,7 +1062,6 @@ function stanford_image_field_default_field_instances() {
       'weight' => 34,
     ),
   );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Caption');
@@ -1125,6 +1072,5 @@ function stanford_image_field_default_field_instances() {
   t('Source Info');
   t('This text field gives you a place to record source and other information for identifying this image. For example, if it has changed, you can enter the original name of this image. This record-keeping information is hidden and is not displayed with the image.');
   t('Your image will be scaled and cropped when it is displayed. To learn exact dimensions for cropping your image go to <a href="https://sites-jumpstart.stanford.edu/user-guide/multimedia/banner-and-block-image-sizes-and-dimensions">Banner and Block Image Sizes and Dimensions</a>.');
-
   return $field_instances;
 }
