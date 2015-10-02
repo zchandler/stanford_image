@@ -265,16 +265,14 @@ function stanford_image_field_default_field_instances() {
       'stanford_3_col_header' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 3,
       ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
       ),
@@ -379,16 +377,14 @@ function stanford_image_field_default_field_instances() {
       'stanford_large_scaled' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 4,
       ),
       'stanford_large_square' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 9,
       ),
