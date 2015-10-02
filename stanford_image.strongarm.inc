@@ -169,6 +169,12 @@ function stanford_image_strongarm() {
       'stanford_full_width_banner' => array(
         'custom_settings' => TRUE,
       ),
+      'stanford_full_width_banner_short' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_huge_landscape' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
