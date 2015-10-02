@@ -146,16 +146,14 @@ function stanford_image_field_default_field_instances() {
       'stanford_large_scaled' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
       ),
       'stanford_large_square' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 8,
       ),
