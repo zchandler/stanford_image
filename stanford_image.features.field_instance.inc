@@ -3,13 +3,11 @@
  * @file
  * stanford_image.features.field_instance.inc
  */
-
 /**
  * Implements hook_field_default_field_instances().
  */
 function stanford_image_field_default_field_instances() {
   $field_instances = array();
-
   // Exported field_instance:
   // 'field_collection_item-field_s_image_info-field_s_image_caption'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_caption'] = array(
@@ -116,6 +114,12 @@ function stanford_image_field_default_field_instances() {
         'weight' => 2,
       ),
       'stanford_full_width_banner' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'stanford_full_width_banner_short' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -244,7 +248,6 @@ function stanford_image_field_default_field_instances() {
       'weight' => 35,
     ),
   );
-
   // Exported field_instance:
   // 'field_collection_item-field_s_image_info-field_s_image_credits'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_credits'] = array(
@@ -341,6 +344,12 @@ function stanford_image_field_default_field_instances() {
         'weight' => 4,
       ),
       'stanford_full_width_banner' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'stanford_full_width_banner_short' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -469,7 +478,6 @@ function stanford_image_field_default_field_instances() {
       'weight' => 33,
     ),
   );
-
   // Exported field_instance:
   // 'field_collection_item-field_s_image_info-field_s_image_image'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_image'] = array(
@@ -623,6 +631,27 @@ function stanford_image_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => 'full-width-banner',
+        ),
+        'type' => 'image',
+        'weight' => 6,
+      ),
+      'stanford_full_width_banner_short' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'custom_link_to_entity' => 0,
+          'custom_prefix' => '',
+          'custom_reverse' => 0,
+          'custom_strip_preserve' => '',
+          'custom_strip_tags' => 0,
+          'custom_strtolower' => 0,
+          'custom_strtoupper' => 0,
+          'custom_suffix' => '',
+          'custom_trim' => 0,
+          'custom_ucfirst' => 0,
+          'custom_ucwords' => 0,
+          'image_link' => '',
+          'image_style' => 'full-width-banner-short',
         ),
         'type' => 'image',
         'weight' => 6,
@@ -818,7 +847,6 @@ function stanford_image_field_default_field_instances() {
       'weight' => 32,
     ),
   );
-
   // Exported field_instance:
   // 'field_collection_item-field_s_image_info-field_s_image_source_info'
   $field_instances['field_collection_item-field_s_image_info-field_s_image_source_info'] = array(
@@ -917,6 +945,12 @@ function stanford_image_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 3,
       ),
+      'stanford_full_width_banner_short' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'stanford_icon_profile' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1008,7 +1042,6 @@ function stanford_image_field_default_field_instances() {
       'weight' => 34,
     ),
   );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Caption');
@@ -1019,6 +1052,5 @@ function stanford_image_field_default_field_instances() {
   t('Source Info');
   t('This text field gives you a place to record source and other information for identifying this image. For example, if it has changed, you can enter the original name of this image. This record-keeping information is hidden and is not displayed with the image.');
   t('Your image will be scaled and cropped when it is displayed. To learn exact dimensions for cropping your image go to <a href="https://sites-jumpstart.stanford.edu/user-guide/multimedia/banner-and-block-image-sizes-and-dimensions">Banner and Block Image Sizes and Dimensions</a>.');
-
   return $field_instances;
 }
