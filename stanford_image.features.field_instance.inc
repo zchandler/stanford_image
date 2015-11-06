@@ -530,7 +530,7 @@ function stanford_image_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '6-col-banner',
+          'image_style' => '6-col-banner-short',
         ),
         'type' => 'image',
         'weight' => 6,
