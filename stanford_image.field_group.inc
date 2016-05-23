@@ -373,7 +373,7 @@ function stanford_image_field_group_info() {
       'label' => 'Caption Style',
       'instance_settings' => array(
         'id' => '',
-        'classes' => 'group-s-caption-style field-group-div',
+        'classes' => 'group-s-caption-style field-group-div caption',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -498,7 +498,7 @@ function stanford_image_field_group_info() {
       'label' => 'Credits Style',
       'instance_settings' => array(
         'id' => '',
-        'classes' => 'group-s-credits-style field-group-div',
+        'classes' => 'group-s-credits-style field-group-div credits',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
