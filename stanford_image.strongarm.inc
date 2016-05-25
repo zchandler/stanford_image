@@ -178,15 +178,6 @@ function stanford_image_strongarm() {
       'stanford_banner_850x400' => array(
         'custom_settings' => TRUE,
       ),
-      'gallery_large' => array(
-        'custom_settings' => FALSE,
-      ),
-      'gallery_medium' => array(
-        'custom_settings' => FALSE,
-      ),
-      'gallery_small' => array(
-        'custom_settings' => FALSE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(
