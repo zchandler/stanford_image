@@ -178,6 +178,27 @@ function stanford_image_strongarm() {
       'stanford_banner_850x400' => array(
         'custom_settings' => TRUE,
       ),
+      'stanford_image_left' => array(
+        'custom_settings' => FALSE,
+      ),
+      'gallery_large' => array(
+        'custom_settings' => FALSE,
+      ),
+      'gallery_medium' => array(
+        'custom_settings' => FALSE,
+      ),
+      'gallery_small' => array(
+        'custom_settings' => FALSE,
+      ),
+      'sm_landscape_scaled' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_sm_landscape_scaled' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_banner_fw_short_credits' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
