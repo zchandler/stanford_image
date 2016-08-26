@@ -90,7 +90,6 @@ features[field_group][] = group_s_image_border_style|field_collection_item|field
 features[field_group][] = group_s_image_border_style|field_collection_item|field_s_image_info|stanford_9_col_banner
 features[field_group][] = group_s_image_border_style|field_collection_item|field_s_image_info|stanford_banner_850x400
 features[field_group][] = group_s_image_border_style|field_collection_item|field_s_image_info|stanford_banner_fw_short_credits
-features[field_group][] = group_s_image_border_style|field_collection_item|field_s_image_info|stanford_image_left
 features[field_group][] = group_s_image_border_style|field_collection_item|field_s_image_info|stanford_large_scaled
 features[field_group][] = group_s_image_border_style|field_collection_item|field_s_image_info|stanford_large_square
 features[field_group][] = group_s_image_border_style|field_collection_item|field_s_image_info|stanford_med_profile
