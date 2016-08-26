@@ -190,9 +190,6 @@ function stanford_image_strongarm() {
       'gallery_small' => array(
         'custom_settings' => FALSE,
       ),
-      'sm_landscape_scaled' => array(
-        'custom_settings' => TRUE,
-      ),
       'stanford_sm_landscape_scaled' => array(
         'custom_settings' => TRUE,
       ),

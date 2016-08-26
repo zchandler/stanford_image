@@ -24,12 +24,6 @@ function stanford_image_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 2,
       ),
-      'sm_landscape_scaled' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
       'stanford_3_col_header' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -298,12 +292,6 @@ function stanford_image_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 4,
       ),
-      'sm_landscape_scaled' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
       'stanford_3_col_header' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -556,16 +544,6 @@ function stanford_image_field_default_field_instances() {
     'description' => 'Your image will be scaled and cropped when it is displayed. To learn exact dimensions for cropping your image go to <a href="https://sites-jumpstart.stanford.edu/user-guide/multimedia/banner-and-block-image-sizes-and-dimensions">Banner and Block Image Sizes and Dimensions</a>.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => 'page-width',
-        ),
-        'type' => 'image',
-        'weight' => 6,
-      ),
-      'sm_landscape_scaled' => array(
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
@@ -977,12 +955,6 @@ function stanford_image_field_default_field_instances() {
     'description' => 'This text field gives you a place to record source and other information for identifying this image. For example, if it has changed, you can enter the original name of this image. This record-keeping information is hidden and is not displayed with the image.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-      'sm_landscape_scaled' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
