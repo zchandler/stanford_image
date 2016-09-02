@@ -192,12 +192,12 @@ function stanford_image_ds_view_modes_info() {
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
-  $ds_view_mode->view_mode = 'stanford_image_left';
+  $ds_view_mode->view_mode = 'stanford_header_150_width_left';
   $ds_view_mode->label = 'Image Left';
   $ds_view_mode->entities = array(
     'bean' => 'bean',
   );
-  $export['stanford_image_left'] = $ds_view_mode;
+  $export['stanford_header_150_width_left'] = $ds_view_mode;
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
