@@ -196,6 +196,9 @@ function stanford_image_strongarm() {
       'stanford_banner_fw_short_credits' => array(
         'custom_settings' => TRUE,
       ),
+      'stanford_banner_fw_midgt_credits' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

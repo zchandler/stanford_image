@@ -388,6 +388,38 @@ function stanford_image_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_caption_style|field_collection_item|field_s_image_info|stanford_banner_fw_midgt_credits';
+  $field_group->group_name = 'group_s_caption_style';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_s_image_info';
+  $field_group->mode = 'stanford_banner_fw_midgt_credits';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Caption Style',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_s_image_caption',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Caption Style',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-s-caption-style field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_caption_style|field_collection_item|field_s_image_info|stanford_banner_fw_midgt_credits'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_s_caption_style|field_collection_item|field_s_image_info|stanford_banner_fw_short_credits';
   $field_group->group_name = 'group_s_caption_style';
   $field_group->entity_type = 'field_collection_item';
@@ -396,7 +428,7 @@ function stanford_image_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Caption Style',
-    'weight' => '3',
+    'weight' => '1',
     'children' => array(
       0 => 'field_s_image_caption',
     ),
@@ -606,6 +638,38 @@ function stanford_image_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_credits_style|field_collection_item|field_s_image_info|stanford_banner_fw_midgt_credits';
+  $field_group->group_name = 'group_s_credits_style';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_s_image_info';
+  $field_group->mode = 'stanford_banner_fw_midgt_credits';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Credits Style',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_s_image_credits',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Credits Style',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-s-credits-style field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_credits_style|field_collection_item|field_s_image_info|stanford_banner_fw_midgt_credits'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_s_credits_style|field_collection_item|field_s_image_info|stanford_banner_fw_short_credits';
   $field_group->group_name = 'group_s_credits_style';
   $field_group->entity_type = 'field_collection_item';
@@ -614,7 +678,7 @@ function stanford_image_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Credits Style',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'field_s_image_credits',
     ),
@@ -1042,6 +1106,38 @@ function stanford_image_field_group_info() {
     ),
   );
   $field_groups['group_s_image_border_style|field_collection_item|field_s_image_info|stanford_banner_850x400'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_image_border_style|field_collection_item|field_s_image_info|stanford_banner_fw_midgt_credits';
+  $field_group->group_name = 'group_s_image_border_style';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_s_image_info';
+  $field_group->mode = 'stanford_banner_fw_midgt_credits';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Image Border Style	',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_s_image_image',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Image Border Style	',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-s-image-border-style field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_image_border_style|field_collection_item|field_s_image_info|stanford_banner_fw_midgt_credits'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
