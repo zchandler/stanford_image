@@ -1346,7 +1346,6 @@ function stanford_image_field_group_info() {
     'format_settings' => array(
       'label' => 'Add/Edit Image',
       'instance_settings' => array(
-        'required_fields' => 1,
         'classes' => '',
         'description' => '',
       ),
